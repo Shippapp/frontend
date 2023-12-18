@@ -1,0 +1,496 @@
+.my-linkups {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #d5d5d5;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  .my-linkups .div {
+    background-color: #d5d5d5;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 75px;
+  }
+
+  .my-linkups .overlap {
+    background-color: #ffffff;
+    border-radius: 30px 30px 0px 0px;
+    height: 115px;
+    left: 0;
+    position: absolute;
+    top: 817px;
+    width: 430px;
+  }
+  
+  .my-linkups .group {
+    height: 38px;
+    left: 53px;
+    position: relative;
+    top: 39px;
+    width: 323px;
+  }
+  
+  .my-linkups .myLinkups{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    width: 250px;
+    margin-top: 40px;
+  }
+  
+  .my-linkups .group-2 {
+   
+    background-size: 100% 100%;
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 26px;
+  }
+  
+  
+  .my-linkups .overlap-group {
+    background-color: #ffffff;
+    height: 96px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 430px;
+  }
+  
+  .my-linkups .text-wrapper {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 160px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 62px;
+    white-space: nowrap;
+  }
+  
+  .my-linkups .icon-more-horizontal {
+    height: 7px;
+    left: 373px;
+    position: absolute;
+    top: 72px;
+    width: 25px;
+  }
+  
+  .my-linkups .group-wrapper {
+    background-color: #e87b00;
+    border-radius: 10px;
+    height: 75px;
+    left: 258px;
+    position: absolute;
+    top: 214px;
+    width: 42px;
+  }
+  
+  .my-linkups .group-3 {
+    height: 58px;
+    left: 12px;
+    position: relative;
+    top: 10px;
+    width: 21px;
+  }
+  
+  .my-linkups .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .my-linkups .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 1px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .overlap-2 {
+    background-color: #313131;
+    border-radius: 20px;
+    height: 486px;
+    left: 24px;
+    position: absolute;
+    top: 310px;
+    width: 382px;
+  }
+  
+  
+  .my-linkups .arrow-right {
+    height: 24px !important;
+    left: 349px !important;
+    position: absolute !important;
+    top: 96px !important;
+    width: 24px !important;
+  }
+  
+  .my-linkups .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+  }
+  
+  .my-linkups .plus-math-wrapper {
+    background-color: #e87b00;
+    border-radius: 25.5px/24px;
+    height: 48px;
+    left: 316px;
+    position: absolute;
+    top: 418px;
+    width: 51px;
+  }
+  
+  .my-linkups .plus-math {
+    height: 27px;
+    left: 12px;
+    position: absolute;
+    top: 11px;
+    width: 28px;
+  }
+  
+  .my-linkups .group-4 {
+    height: 50px;
+    left: 28px;
+    position: absolute;
+    top: 80px;
+    width: 310px;
+  }
+  
+  .my-linkups .ellipse {
+    height: 50px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 52px;
+  }
+  
+  .my-linkups .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+  }
+  
+  .my-linkups .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 271px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-linkups .text-wrapper-7 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 248px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+  }
+  
+  .my-linkups .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 23px;
+  }
+  
+  .my-linkups .group-5 {
+    height: 50px;
+    left: 28px;
+    position: absolute;
+    top: 169px;
+    width: 310px;
+  }
+  
+  .my-linkups .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+  }
+  
+  .my-linkups .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 271px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .my-linkups .text-wrapper-11 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 248px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+  }
+  
+  .my-linkups .text-wrapper-12 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 26px;
+  }
+  
+  .my-linkups .rectangle-2 {
+    background: radial-gradient(50% 50% at 50% 50%, rgb(217, 217, 217) 0%, rgba(217, 217, 217, 0) 100%);
+    height: 2px;
+    left: 30px;
+    position: absolute;
+    top: 148px;
+    width: 315px;
+  }
+  
+  .my-linkups .text-wrapper-13 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    left: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 185px;
+    white-space: nowrap;
+  }
+  
+  .my-linkups .text-wrapper-14 {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 130px;
+    white-space: nowrap;
+  }
+  
+  .my-linkups .group-6 {
+    height: 58px;
+    left: 27px;
+    position: absolute;
+    top: 224px;
+    width: 33px;
+  }
+  
+  .my-linkups .text-wrapper-15 {
+    color: #919191;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .my-linkups .text-wrapper-16 {
+    color: #864801;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 7px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .group-7 {
+    height: 58px;
+    left: 88px;
+    position: absolute;
+    top: 224px;
+    width: 29px;
+  }
+  
+  .my-linkups .text-wrapper-17 {
+    color: #864801;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 5px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .group-8 {
+    height: 58px;
+    left: 145px;
+    position: absolute;
+    top: 224px;
+    width: 34px;
+  }
+  
+  .my-linkups .group-9 {
+    height: 58px;
+    left: 207px;
+    position: absolute;
+    top: 224px;
+    width: 35px;
+  }
+  
+  .my-linkups .text-wrapper-18 {
+    color: #864801;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .group-10 {
+    height: 58px;
+    left: 319px;
+    position: absolute;
+    top: 224px;
+    width: 26px;
+  }
+  
+  .my-linkups .text-wrapper-19 {
+    color: #864801;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 3px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .group-11 {
+    height: 58px;
+    left: 373px;
+    position: absolute;
+    top: 224px;
+    width: 30px;
+  }
+  
+  .my-linkups .text-wrapper-20 {
+    color: #864801;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 6px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+  }
+  
+  .my-linkups .line {
+    height: 2px;
+    left: 27px;
+    object-fit: cover;
+    position: absolute;
+    top: 163px;
+    width: 364px;
+  }
+  
+  .my-linkups .toggle-component {
+    left: 338px;
+    position: absolute; 
+    top: 114px 
+  }
+  
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 0;
+    height: 98px;
+  }
+  
+  .bottom-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+  }

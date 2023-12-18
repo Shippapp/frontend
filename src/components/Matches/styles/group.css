@@ -1,0 +1,83 @@
+/* GroupMatchScreen.css */
+
+.group-match-screen {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #e87b00;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  .match-content {
+    text-align: center;
+    color: #ffffff; /* White text color */
+  }
+  
+  .tribe-heading {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 150px;
+    width: 250px;
+   margin-left: 100px;
+  }
+  
+  .ellipses-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ellipse-1,
+.ellipse-2,
+.ellipse-3,
+.ellipse-4 {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #ffffff; 
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 5px; 
+  display: inline-block; 
+  flex-shrink: 0; 
+}
+
+/* Container styling */
+.ellipses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-bottom: 60px;
+}
+  
+  /* Button styling (adjust as needed) */
+  .start-group-chat-button,
+  .set-linkup-button,
+  .back-button {
+    width: 238px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: #ffffff;
+    box-shadow: 0px 4px 6px #00000024;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .start-group-chat-button {
+    background-color: #ffffff; /* White fill */
+    color: #e87b00; /* Orange text color */
+  }
+  
+  .set-linkup-button,
+  .back-button {
+    border: 3px solid #ffffff; /* White border */
+    background-color: transparent;
+    color: #ffffff; /* White text color */
+  }
+  

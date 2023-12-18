@@ -1,0 +1,101 @@
+.chat-screen {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #d5d5d5;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 75px;
+  }
+
+  .circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+  
+  .circle {
+    width: 165px;
+    height: 165px;
+    border: 5px solid #e87b00;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .textwrapper {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    width: 250px;
+    margin-top: 40px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .help-text {
+    color: #999999;
+    margin-top: 200px;
+    width: 298px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .see-prompts-button {
+    background-color: #e87b00;
+    border: none; /* Remove border */
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px #00000026;
+    height: 44px;
+    position: relative;
+    width: 120px;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 13px;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 0;
+    height: 98px;
+  }
+  
+  .bottom-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+  }
+  
+  

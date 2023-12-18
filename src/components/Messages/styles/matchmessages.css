@@ -1,0 +1,37 @@
+.messages-screen {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #d5d5d5;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 75px;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 0;
+    height: 98px;
+    margin-top: auto
+  }
+  
+  .bottom-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+  }
+  
