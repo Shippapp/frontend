@@ -21,7 +21,25 @@
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    height: 75px;
+    height: 50px;
+  }
+
+  .toggle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-right: 25px;
+    margin-top: 10px ;
+  }
+
+  .random-linkup {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 29px;
+    margin-top: 10px;
   }
 
   .my-linkups .overlap {
@@ -195,10 +213,10 @@
   
   .my-linkups .ellipse {
     height: 50px;
-    left: 0;
+    left: -10px;
     object-fit: cover;
     position: absolute;
-    top: 0;
+    top: -15px;
     width: 52px;
   }
   
@@ -472,11 +490,6 @@
     width: 364px;
   }
   
-  .my-linkups .toggle-component {
-    left: 338px;
-    position: absolute; 
-    top: 114px 
-  }
   
   .bottom-container {
     display: flex;

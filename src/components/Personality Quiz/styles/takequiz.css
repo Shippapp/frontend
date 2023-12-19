@@ -1,0 +1,43 @@
+.MBTI-quiz {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #d5d5d5;
+    height: 932px;
+    position: relative;
+    width: 430px;
+  }
+  
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 50px;
+  }
+
+  .quizpage-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 0;
+    height: 98px;
+  }
+  
+  .bottom-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+  }
+  

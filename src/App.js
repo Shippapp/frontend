@@ -18,6 +18,11 @@ import { GroupMatchScreen } from './components/Matches/groupmatch';
 import { UnmatchPopUp } from './components/Popups/unmatch';
 import { BlockPopUp } from './components/Popups/blocker';
 import { BlockDonePopUp } from './components/Popups/blocker2';
+import PersonalityQuiz from './components/Personality Quiz/quiz';
+import { TakeQuiz } from './components/Personality Quiz/takequiz';
+import MyAccount from './components/Account/myaccount';
+
+
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState(1);
@@ -61,6 +66,9 @@ function App() {
         <Route path="unmatchpopup" element={<UnmatchPopUp />} />
         <Route path="blockpopup" element={<BlockPopUp />} />
         <Route path="blockdonepopup" element={<BlockDonePopUp />} />
+        <Route path="personalityquiz" element={<PersonalityQuiz />} />
+        <Route path="takequiz" element={<TakeQuiz />} />
+        <Route path="myprofile" element={<MyAccount />} />
       </Routes>
     </Router>
   );
