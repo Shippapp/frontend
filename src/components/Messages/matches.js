@@ -113,7 +113,7 @@ export const Messages = () => {
       <div className="message-boxes">
         {dummyMessageHistory.map((message, index) => (
           <div className="message-box" key={index}>
-            <div className="profile-picture">
+            <div className="display-picture">
               <img src={message.imageUrl} alt={`${message.username}'s profile`} />
             </div>
             <div className="message-details">

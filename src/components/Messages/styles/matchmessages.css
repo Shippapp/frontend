@@ -99,11 +99,13 @@
     height: 60px;
   }
   
-  .profile-picture img {
+  .display-picture {
     width: 49px;
     height: 46px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid #E87B00;
   }
   
   .message-details {

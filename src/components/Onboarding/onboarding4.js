@@ -33,7 +33,7 @@ export const OnboardingPart4 = ({ onNext, onBack }) => {
         <p className="info-text">This step enables the group match feature. But you can always take the quiz later.</p>
       </div>
       <div className="next-button">
-        <Link to="/shipphome">
+        <Link to="/splash1">
           <div className="next" onClick={onNext}>
             <div className="next-text">Finish</div>
           </div>

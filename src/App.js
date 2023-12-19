@@ -21,6 +21,12 @@ import { BlockDonePopUp } from './components/Popups/blocker2';
 import PersonalityQuiz from './components/Personality Quiz/quiz';
 import { TakeQuiz } from './components/Personality Quiz/takequiz';
 import MyAccount from './components/Account/myaccount';
+import SetLinkupPopup from './components/Popups/setLinkup';
+import OnboardingSplash from './components/Splash/splash1';
+import OnboardingSplash2 from './components/Splash/splash2';
+import OnboardingSplash3 from './components/Splash/splash3';
+import UploadContentPopup from './components/Popups/uploadcontent';
+import ConnectTweetPopup from './components/Popups/connecttweet';
 
 
 
@@ -38,7 +44,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Splash />} />
+        <Route path="/splash" element={<Splash />} />
         <Route path="/signup" element={<SignUp />} />
         <Route
           path="/onboarding1"
@@ -69,6 +75,12 @@ function App() {
         <Route path="personalityquiz" element={<PersonalityQuiz />} />
         <Route path="takequiz" element={<TakeQuiz />} />
         <Route path="myprofile" element={<MyAccount />} />
+        <Route path="setlinkup" element={<SetLinkupPopup />} />
+        <Route path="splash1" element={<OnboardingSplash />} />
+        <Route path="splash2" element={<OnboardingSplash2 />} />
+        <Route path="splash3" element={<OnboardingSplash3 />} />
+        <Route path="uploadcontent" element={<UploadContentPopup/>} />
+        <Route path="connecttweet" element={<ConnectTweetPopup/>} />
       </Routes>
     </Router>
   );

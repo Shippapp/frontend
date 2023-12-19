@@ -1,0 +1,52 @@
+
+.upload-content-popup {
+    width: 300px;
+    height: 400px;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to provide space between elements */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .popup-subtitle {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .upload-button,
+  .connect-button {
+    width: 238px;
+    height: 44px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: #e87b00;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }

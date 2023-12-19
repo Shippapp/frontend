@@ -2,16 +2,102 @@
 .splash-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    margin: 0 auto;
+    height: 932px;
+    position: relative;
+    width: 430px;
     background-color: #e87b00;
+    align-items: center;
   }
   
+  .splash-title {
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Inter-SemiBold", Helvetica;
+    color: #fff;
+    width: 223px;
+    margin-left: 30px;
+  }
+
+  .splash2-title {
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Inter-SemiBold", Helvetica;
+    color: #fff;
+    width: 238px;
+    margin-left: 30px;
+  }
+
+  .splash3-title {
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Inter-SemiBold", Helvetica;
+    color: #fff;
+    width: 290px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+  }
+
+  .splash31-title {
+    margin-top: 120px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Inter-SemiBold", Helvetica;
+    color: #fff;
+    width: 290px;
+    margin-left: 10px;
+  }
+
+  .animation {
+margin-left: 20px;
+margin-top: 50px;
+  }
+
+  .icons-container1 {
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+
+  .nextbutton-icon1 {
+    margin-left: 200px;
+
+  }
+
+  .breadcrumb-icon1 {
+    margin-top: 30px;
+  }
+
+  .icons-container {
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: 70px;
+  }
+
+  .nextbutton-icon {
+    margin-left: 200px;
+    margin-top: 0px;
+  }
+
   .logo {
     width: 300px; 
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 350px;
   }
   
     .slogan {
