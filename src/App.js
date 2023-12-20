@@ -27,6 +27,11 @@ import OnboardingSplash2 from './components/Splash/splash2';
 import OnboardingSplash3 from './components/Splash/splash3';
 import UploadContentPopup from './components/Popups/uploadcontent';
 import ConnectTweetPopup from './components/Popups/connecttweet';
+import ConnectTikTokPopup from './components/Popups/connecttiktok';
+import ProfilePromptsPopup from './components/Popups/profileprompts';
+import AnswerPromptPopup from './components/Popups/answerprompt';
+import SpotifyPromptPopup from './components/Popups/spotifyprompt';
+import ExpandedScreen from './components/Home/expandedhome';
 
 
 
@@ -81,6 +86,11 @@ function App() {
         <Route path="splash3" element={<OnboardingSplash3 />} />
         <Route path="uploadcontent" element={<UploadContentPopup/>} />
         <Route path="connecttweet" element={<ConnectTweetPopup/>} />
+        <Route path="connecttiktok" element={<ConnectTikTokPopup/>} />
+        <Route path="profileprompts" element={<ProfilePromptsPopup/>} />
+        <Route path="answerprompt" element={<AnswerPromptPopup/>} />
+        <Route path="spotifyprompt" element={<SpotifyPromptPopup/>} />
+        <Route path="profileexpanded" element={<ExpandedScreen/>} />
       </Routes>
     </Router>
   );
