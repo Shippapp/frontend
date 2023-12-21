@@ -109,16 +109,15 @@ const MyAccount = () => {
         <div className="social-media-box"></div>
         <div className="social-media-box"></div>
       </div>
-      <div className="prompts-container">
+      <div className="account-prompts-container">
         {/* Prompts */}
-        <div className="prompt-box"></div>
-        <div className="prompt-box"></div>
-        <div className="prompt-box"></div>
+        <div className="account-prompt-box"></div>
+        <div className="account-prompt-box"></div>
+        <div className="account-prompt-box"></div>
       </div>
     </div>
     <div className="insta-title">Instagram</div>
     <div className="instagram-container">
-        <div className="insta-box"></div>
         <div className="insta-box"></div>
         <div className="insta-box"></div>
         <div className="insta-box"></div>

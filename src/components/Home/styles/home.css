@@ -1,4 +1,4 @@
-.home-screen {
+.home-home-screen {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     width: 430px;
   }
   
-  .top-container {
+  .home-top-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +59,7 @@
     cursor: pointer;
   }
 
-  .profile-cards-container {
+  .home-profile-cards-container {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -170,7 +170,7 @@
     font-size: 16px;
   }
   
-  .bottom-container {
+  .home-bottom-container {
     display: flex;
     justify-content: center;
     align-items: center;

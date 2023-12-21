@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import './styles/expanded.css';
 import { Link } from 'react-router-dom';
 import { Spotify } from 'react-spotify-embed';
+import { TikTokEmbed, TwitterEmbed } from 'react-social-media-embed';
+
  
 
 const ExpandedScreen = () => {
@@ -20,6 +22,8 @@ const ExpandedScreen = () => {
         }
       };
       
+    
+
       <Spotify wide link="https://open.spotify.com/track/28qdL1yHti3BSu6AdLzWbg?si=53acb289207d493d" />
 
       useEffect(() => {
@@ -110,18 +114,28 @@ const ExpandedScreen = () => {
         <div className="item">Zodiac sign</div>
         <div className="item">MBTI</div>
         </div>
-        <div className="tweet-container">
+     <div className="tweet-container">
         {/* Tweet Embed Shot content goes here */}
+        <TwitterEmbed 
+        url="https://x.com/badbbyaera/status/1732779266067386841"
+         width={379}
+         height={350} />
         </div>
-        <div className="prompt-container">
+     <div className="prompt-container">
         {/* Prompt box content goes here */}
         <div className="prompt-question">Prompt question</div>
         <div className="prompt-answer">Prompt Answer</div>
         </div>
-        <div className="tiktok-content">
+    <div className="tiktok-content">
         <div className="tiktok-prompt-title">The TikTok Oscar Award goes to:</div>
         <div className="tiktok-container">
-      {/* TikTok Embed Video content goes here */}
+        <TikTokEmbed 
+        url="https://www.tiktok.com/@_ehiz/video/6918494272413060353" 
+        className="my-tiktok-embed"
+        width={379}
+        height={420}
+        muted
+        />
         </div>
         </div>
         <div className="spotify-content">
@@ -152,7 +166,7 @@ const ExpandedScreen = () => {
 
 
 {/* Bottom white container with rounded corners */}
-     <div className="bottom-container">
+     <div className="expanded-bottom-container">
         <div className="bottom-icons">
         <Link to="/myprofile" className="profile-icon">
                 <svg width="26" height="38" viewBox="0 0 26 38" fill="none" xmlns="http://www.w3.org/2000/svg">

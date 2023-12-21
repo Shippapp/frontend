@@ -32,6 +32,9 @@ import ProfilePromptsPopup from './components/Popups/profileprompts';
 import AnswerPromptPopup from './components/Popups/answerprompt';
 import SpotifyPromptPopup from './components/Popups/spotifyprompt';
 import ExpandedScreen from './components/Home/expandedhome';
+import { DeletePopUp } from './components/Popups/deleteacc';
+import { SpecialAccessPopUp } from './components/Popups/specialacc';
+import Chat from './components/Messages/2chatscreen';
 
 
 
@@ -91,6 +94,9 @@ function App() {
         <Route path="answerprompt" element={<AnswerPromptPopup/>} />
         <Route path="spotifyprompt" element={<SpotifyPromptPopup/>} />
         <Route path="profileexpanded" element={<ExpandedScreen/>} />
+        <Route path="deleteaccount" element={<DeletePopUp/>} />
+        <Route path="specialaccess" element={<SpecialAccessPopUp/>} />
+        <Route path="chatscreen2" element={<Chat/>} />
       </Routes>
     </Router>
   );

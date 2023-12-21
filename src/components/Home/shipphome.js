@@ -44,9 +44,9 @@ const HomeScreen = () => {
     ];
   
     return (
-        <div className="home-screen">
+        <div className="home-home-screen">
       {/* Top white container */}
-      <div className="top-container">
+      <div className="home-top-container">
         <div className="menu-button" onClick={handleMenuButtonClick}>
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="COCO/Line/Menu">
@@ -107,7 +107,7 @@ const HomeScreen = () => {
       </div>
     
         {/* User profile cards */}
-        <div className="profile-cards-container">
+        <div className="home-profile-cards-container">
           {userData.map((user) => (
             <div key={user.id} className="profile-card">
               <div className="ellipse-overlay"></div>
@@ -171,7 +171,7 @@ const HomeScreen = () => {
         </div>
   
         {/* Bottom white container with rounded corners */}
-      <div className="bottom-container">
+      <div className="home-bottom-container">
         <div className="bottom-icons">
         <Link to="/myprofile" className="profile-icon">
                 <svg width="26" height="38" viewBox="0 0 26 38" fill="none" xmlns="http://www.w3.org/2000/svg">

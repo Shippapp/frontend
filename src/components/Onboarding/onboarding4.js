@@ -27,7 +27,7 @@ export const OnboardingPart4 = ({ onNext, onBack }) => {
         </div>
       </div>
       <p className="or-text">Or</p>
-      <button className="quiz-button">Take the quiz</button>
+      <Link to='/personalityquiz' className="quiz-button">Take the quiz</Link>
       <div className="info-wrapper">
         <img className="info-icon" alt="Info" src={infoIcon} />
         <p className="info-text">This step enables the group match feature. But you can always take the quiz later.</p>

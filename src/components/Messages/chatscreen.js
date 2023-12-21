@@ -7,7 +7,7 @@ export const Chatscreen = () => {
       {/* Top white container */}
       <div className="chat-screen">
         <div className="top-container">
-          <div className="back-button">
+          <div className="chat-back-button">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
               <path d="M0 0h24v24H0z" fill="none" />
               <path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z" />

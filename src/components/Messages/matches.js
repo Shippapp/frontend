@@ -102,11 +102,17 @@ export const Messages = () => {
           >
             Liked By
           </button>
+        <div className="tab-indicator" style={{ left: `calc(${activeTab === 'matches' ? '0' : activeTab === 'saved' ? '33.33%' : '66.66%'})` }} />
         </div>
 
         <div className="ellipses-container" style={{ marginLeft: '-120px' }}>
           {renderEllipses()}
         </div>
+      </div>
+      <div className="line-separator">
+        <svg width="379" height="4" viewBox="0 0 379 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0.00270266" y1="0.500007" x2="379.002" y2="2.54865" stroke="#9D9D9D" stroke-opacity="0.29"/>
+        </svg>
       </div>
       <div className="messages-list-container">
       <div className="message-title">Messages</div>

@@ -116,7 +116,7 @@
 
   .tweet-container {
     width: 379px;
-    height: 160px;
+    height: 350px;
     border-radius: 20px;
     background-color: rgb(43, 84, 71);
     margin-top: 20px;
@@ -164,6 +164,12 @@
     margin-top: 20px;
   }
 
+  .my-tiktok-embed {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
   .spotify-prompt-title {
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 20px;
@@ -205,7 +211,7 @@
   }
 
 
-  .bottom-container {
+  .expanded-bottom-container {
     display: flex;
     justify-content: center;
     align-items: center;

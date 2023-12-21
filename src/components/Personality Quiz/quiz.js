@@ -53,7 +53,7 @@ const PersonalityQuiz = () => {
           <div className="question">
             <p style={{ fontSize: '36px' }}>{questions[currentQuestion]}</p>
           </div>
-          <div className="button-container">
+          <div className="quiz-button-container">
             <button className="agree-button" onClick={handleNextQuestion}>
               Agree
             </button>

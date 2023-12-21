@@ -1,0 +1,86 @@
+.delete-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .delete-popup {
+    background-color: #323232;
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .popup-text {
+    font-family: "Inter-SemiBold", Helvetica;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 270px;
+    margin-left: 20px;
+  }
+
+  .popup-subtext {
+    font-family: "Inter-SemiBold", Helvetica;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 260px;
+    margin-left: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: row;
+  }
+  
+  .primary-button,
+  .red-secondary-button {
+    width: 96px;
+    height: 44px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0px 10px;
+  }
+  
+  .primary-button {
+    background-color: #e87b00;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 14px;
+    border: #e87b00;
+  }
+  
+  .red-secondary-button {
+    border: 2px solid #FF3124;
+    background-color: transparent;
+    color: #FF3124;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
