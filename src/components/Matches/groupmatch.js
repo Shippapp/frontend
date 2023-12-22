@@ -6,7 +6,7 @@ export const GroupMatchScreen = () => {
       <div className="group-match-screen">
         <div className="match-content">
           <div className="tribe-heading">Looks like you found a tribe!</div>
-          <div className="ellipses-container">
+          <div className="match-ellipses-container">
             <div className="ellipse-1"></div>
             <div className="ellipse-2"></div>
             <div className="ellipse-3"></div>

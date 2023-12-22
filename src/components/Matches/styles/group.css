@@ -22,6 +22,7 @@
     margin-top: 150px;
     width: 250px;
    margin-left: 100px;
+   margin-bottom: 20px;
   }
   
   .ellipses-container {
@@ -46,7 +47,7 @@
 }
 
 /* Container styling */
-.ellipses-container {
+.match-ellipses-container {
   display: flex;
   justify-content: center;
   align-items: center;
