@@ -35,6 +35,7 @@ import ExpandedScreen from './components/Home/expandedhome';
 import { DeletePopUp } from './components/Popups/deleteacc';
 import { SpecialAccessPopUp } from './components/Popups/specialacc';
 import Chat from './components/Messages/2chatscreen';
+import OTPScreen from './components/Auth/otp';
 
 
 
@@ -71,6 +72,7 @@ function App() {
           element={<OnboardingPart4 onNext={handleNext} onBack={handleBack} currentScreen={currentScreen} />}
         />
         <Route path="/shipphome" element={<HomeScreen />} />
+        <Route path="/otp" element={<OTPScreen />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/chatscreen" element={<Chatscreen />} />

@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import './styles/signUp.css'; 
 import logo from './assets/shipplogo2.png';
-import { Link } from 'react-router-dom';
 import { createClient } from '@supabase/supabase-js';
+import { useNavigate } from 'react-router-dom';
 
 
 const supabaseUrl = 'https://umkjxmhkddltrcjudaem.supabase.co';
@@ -11,20 +11,14 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const SignUp = () => {
-    const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
 
   const handleSignUp = async () => {
     try {
-      const response = await fetch('http://localhost:3000/signup', {
+      const response = await fetch('http://localhost:3001/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,14 +27,19 @@ const SignUp = () => {
       });
 
       if (response.ok) {
-        // Handle successful signup (e.g., redirect to login page)
-        console.log('Signup successful');
+        const data = await response.json();
+        console.log('Sign up successful:', data);
+
+        // Redirect to the OTP page using navigate
+        navigate('http://localhost:3000/otp', { state: { userEmail: email } });;
       } else {
-        // Handle signup error
-        console.error('Signup failed');
+        const errorData = await response.json();
+        console.error('Sign-up error:', errorData);
+        // Handle error, show error message, etc.
       }
     } catch (error) {
-      console.error('Unexpected error during signup:', error);
+      console.error('Unexpected error during sign-up:', error);
+      // Handle unexpected error
     }
   };
 
@@ -108,18 +107,14 @@ const SignUp = () => {
       <div className="signup-form">
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input className="box-input" type="email" id="email" name="email" value={email} onChange={handleEmailChange} />
+          <input className="box-input" type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="input-group">
           <label htmlFor="password">Password</label>
-          <input className="box-input" type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
+          <input className="box-input-pass" type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <div className="input-group">
-          <label htmlFor="password">Re-enter Password</label>
-          <input className="box-input-pass" type="password" id="password" name="password" />
-        </div>
-        <Link to="/onboarding1" className="signup1-button" onClick={handleSignUp}>Sign Up
-        </Link>
+        <button className="signup1-button" onClick={handleSignUp}>Sign Up
+        </button>
         <div className="or-signup-with">Or</div>
           <div className="social-buttons">
           <button className="twitter-button" onClick={handleTwitterSignIn}>Continue with Twitter

@@ -1,0 +1,90 @@
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #e87b00;
+    height: 932px;
+    position: relative;
+    width: 430px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo2 {
+    width: 200px;
+    height: auto;
+    margin-top: 300px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .otp-box {
+    width: 400px;
+    height: 464px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .otp-box h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .otp-box p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    width: 300px;
+    box-sizing: border-box; 
+    margin-left: 60px;
+  }
+  
+  .otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .otp-input-container input {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .resend-text {
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  
+  .resend-link {
+    color: #5A71EA;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .confirm-button {
+    width: 322px;
+    height: 60px;
+    background-color: #081A36;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: darkblue;
+  }
+  
