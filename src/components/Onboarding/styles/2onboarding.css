@@ -231,13 +231,22 @@
     width: 62px;
   }
   
+  .onboarding .insta-ellipse {
+    background-color: #ffffff;
+    border-radius: 31px/30px;
+    height: 60px;
+    position: relative;
+    width: 62px;
+
+  }
+
   .onboarding .instagram {
     height: 34px;
     left: 14px;
     position: absolute;
-    top: 32px;
+    top: 15px;
     width: 34px;
-    margin-left: 14px;
+    margin-left: 0px;
   }
   
   .onboarding .overlap-group-wrapper {

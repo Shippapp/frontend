@@ -1,29 +1,128 @@
 // src/components/SignUp.js
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/signUp.css'; 
 import logo from './assets/shipplogo2.png';
+import { Link } from 'react-router-dom';
+import { createClient } from '@supabase/supabase-js';
+
+
+const supabaseUrl = 'https://umkjxmhkddltrcjudaem.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVta2p4bWhrZGRsdHJjanVkYWVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA2MjgxMTIsImV4cCI6MjAxNjIwNDExMn0.hw4MdS4POOqRKsB6GS7iK_Dt_3c70qX_iENq8XmIzVg';
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const SignUp = () => {
+    const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSignUp = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        // Handle successful signup (e.g., redirect to login page)
+        console.log('Signup successful');
+      } else {
+        // Handle signup error
+        console.error('Signup failed');
+      }
+    } catch (error) {
+      console.error('Unexpected error during signup:', error);
+    }
+  };
+
+  const handleTwitterSignIn = async () => {
+    try {
+      const { data: authData, error } = await supabase.auth.signInWithOAuth({
+        provider: 'twitter',
+      });
+  
+      if (error) {
+        console.error('Twitter sign-in error:', error);
+        // Handle authentication error
+      } else {
+        // Check if email is available in authData
+        const userEmail = authData.email;
+  
+        if (userEmail) {
+          // Store the email in Supabase (e.g., using updateProfile or update)
+          await supabase.auth.updateProfile({ email: userEmail });
+          // Redirect to the desired page with the email information
+          window.location.assign('/onboarding1?email=' + userEmail);
+        } else {
+          console.warn('Email not available from Twitter. Consider prompting user to link email later.');
+          // Handle case where email is not available (e.g., offer email linking later)
+        }
+      }
+    } catch (error) {
+      console.error('Unexpected error during Twitter sign-in:', error);
+      // Handle unexpected errors
+    }
+  };
+
+  const handleFacebookSignIn = async () => {
+    try {
+      const { data: authData, error } = await supabase.auth.signInWithOAuth({
+        provider: 'facebook',
+      });
+  
+      if (error) {
+        console.error('Facebook sign-in error:', error);
+        // Handle authentication error
+      } else {
+        const userEmail = authData.email;
+  
+        if (userEmail) {
+          // Store the email in Supabase (e.g., using updateProfile or update)
+          await supabase.auth.updateProfile({ email: userEmail });
+          // Redirect to the desired page with the email information
+          window.location.assign('/onboarding1?email=' + userEmail);
+        } else {
+          console.warn('Email not available from Facebook. Consider prompting user to link email later.');
+          // Handle case where email is not available (e.g., offer email linking later)
+        }
+      }
+
+    } catch (error) {
+      console.error('Unexpected error during Facebook sign-in:', error);
+      // Handle unexpected errors
+    }
+  };
+  
   return (
     <div className="signup-container">
       <img src={logo} alt="Logo" className="logo" />
       <div className="signup-form">
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input className="box-input" type="email" id="email" name="email" />
+          <input className="box-input" type="email" id="email" name="email" value={email} onChange={handleEmailChange} />
         </div>
         <div className="input-group">
           <label htmlFor="password">Password</label>
-          <input className="box-input" type="password" id="password" name="password" />
+          <input className="box-input" type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
         </div>
         <div className="input-group">
           <label htmlFor="password">Re-enter Password</label>
-          <input className="box-input" type="password" id="password" name="password" />
+          <input className="box-input-pass" type="password" id="password" name="password" />
         </div>
-        <button className="signup-button">Sign Up</button>
+        <Link to="/onboarding1" className="signup1-button" onClick={handleSignUp}>Sign Up
+        </Link>
         <div className="or-signup-with">Or</div>
-        <div className="social-buttons">
-          <button className="twitter-button">Continue with Twitter
+          <div className="social-buttons">
+          <button className="twitter-button" onClick={handleTwitterSignIn}>Continue with Twitter
             <div className="twitter-icon">
                 <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 17C0 7.61116 7.83502 0 17.5 0C27.165 0 35 7.61116 35 17C35 26.3888 27.165 34 17.5 34C7.83502 34 0 26.3888 0 17Z" fill="#55ACEE"/>
@@ -31,8 +130,8 @@ const SignUp = () => {
                 </svg>
             </div>
           </button>
-          <button className="facebook-button">Continue with Facebook
-            <div className="twitter-icon">
+          <button className="facebook-button" onClick={handleFacebookSignIn}>Continue with Facebook
+            <div className="facebook-icon">
                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5Z" fill="#3B5998"/>
                     <path d="M19.324 27.7896V18.2687H21.9522L22.3005 14.9877H19.324L19.3285 13.3456C19.3285 12.4899 19.4098 12.0313 20.6388 12.0313H22.2819V8.75H19.6533C16.496 8.75 15.3847 10.3416 15.3847 13.0182V14.9881H13.4166V18.2691H15.3847V27.7896H19.324Z" fill="white"/>

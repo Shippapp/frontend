@@ -25,8 +25,8 @@ const OnboardingSplash3 = () => {
         <div className="splash-title-container">
             <div className="splash3-title">Linkup with your matches quickly...
             </div>
-            <div id="lottie-container" style={{ width: '300px', height: '300px' }}></div>
-            <div className="splash31-title">...and keep track of your linkups easily.
+            <div className="anime3" id="lottie-container" style={{ width: '300px', height: '300px' }}></div>
+            <div className="splash31-title">...and keep track of your plans easily.
             </div>
             <div className="icons-container">
                 <div className="breadcrumb-icon">

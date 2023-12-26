@@ -58,10 +58,17 @@
     border-radius: 10px;
   }
 
-  .signup-button {
+  .box-input-pass {
+    width: 338px; 
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .signup1-button {
     background-color: #081A36;
     color: #fff;
-    padding: 10px;
+    padding: 20px 120px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -72,6 +79,7 @@
     font-size: 16px;
     margin-left: -10px;
     font-weight: 600;
+    text-decoration: none;
   }
   
   .or-signup-with {
@@ -107,24 +115,26 @@
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    cursor: pointer;
   }
   
   .facebook-button {
-  background-color: #fff;
-  color: black;
-  text-align: left;
-  padding: 0px 60px;
-  width: 338px; 
-  height: 60px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-family: "Inter-SemiBold", Helvetica;
+    background-color: #fff;
+    color: black;
+    text-align: left;
+    padding: 0px 60px;
+    width: 338px; 
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: "Inter-SemiBold", Helvetica;
     font-size: 14px;
     font-weight: 600;
     border: 2px solid white;
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    cursor: pointer;
     
 }
 

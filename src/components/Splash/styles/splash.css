@@ -34,6 +34,7 @@
     color: #fff;
     width: 238px;
     margin-left: 30px;
+    margin-bottom: 60px;
   }
 
   .splash3-title {
@@ -51,7 +52,7 @@
   }
 
   .splash31-title {
-    margin-top: 120px;
+    margin-top: 60px;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -67,6 +68,19 @@
 margin-left: 20px;
 margin-top: 50px;
   }
+
+  .anime2 {
+margin-left: 40px;
+  }
+
+  .anime3 {
+    margin-left: 40px;
+      }
+    
+  .animation2 {
+margin-left: 20px;
+  }
+  
 
   .icons-container1 {
     flex-direction: row;

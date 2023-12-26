@@ -53,7 +53,7 @@ export const OnboardingPart2 = ({ onNext, onBack }) => {
             <div className="frame-9">
               <div className="text-wrapper-3">Connect Instagram (optional)</div>
               <div className="frame-10">
-                <div className="ellipse" />
+                <div className="insta-ellipse" />
                 <img
                   className="instagram"
                   alt="Instagram"

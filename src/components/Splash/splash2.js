@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/splash.css';
 import Lottie from 'lottie-web';
-import animationData from './assets/thumbsup.json';
+import animationData from './assets/thumbconfetti.json';
 
 const OnboardingSplash2 = () => {
  
@@ -24,7 +24,7 @@ const OnboardingSplash2 = () => {
         <div className="splash-title-container">
             <div className="splash2-title">Like somebody's vibe? Hit the like button and see if you match!
             </div>
-            <div id="lottie-container" style={{ width: '300px', height: '300px' }}></div>
+            <div className="anime2" id="lottie-container" style={{ width: '300px', height: '300px' }}></div>
                 {/* Additional content of your component */}
             <div className="icons-container1">
                 <div className="breadcrumb-icon1">
